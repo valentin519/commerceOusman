@@ -1,0 +1,17 @@
+.navbar{
+    width: 98%;
+    height: auto;
+    border: solid ;
+    border-color: #D6AF26;
+    display: flex;
+    flex-direction: column;
+}
+.navbar p{
+    font-size: 1.5em;
+}
+.womenCategory p{
+    font-size: 1em;
+}
+.menCategory p{
+    font-size: 1em;
+}

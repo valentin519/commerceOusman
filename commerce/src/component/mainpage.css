@@ -1,0 +1,31 @@
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.header img{
+    width: 20%;
+}
+.header hr{
+    color: #D6AF26;
+    width: 96%;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.boxone{
+    width: 20%;
+}
+.boxtwo{
+    width: 70%;
+}
