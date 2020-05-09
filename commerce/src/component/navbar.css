@@ -5,13 +5,19 @@
     border-color: #D6AF26;
     display: flex;
     flex-direction: column;
+    
 }
 .navbar p{
     font-size: 1.5em;
+    margin:2%;
+    text-align: left;
 }
 .womenCategory p{
     font-size: 1em;
 }
 .menCategory p{
+    font-size: 1em;
+}
+.acceCategory p{
     font-size: 1em;
 }

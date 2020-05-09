@@ -12,6 +12,7 @@ class Navbar extends React.Component {
         }
         this.womenAppear=this.womenAppear.bind(this);
         this.menAppear=this.menAppear.bind(this);
+        this.acceAppear=this.acceAppear.bind(this);
     }
     womenAppear(){
         this.setState(prevState => {
@@ -21,6 +22,11 @@ class Navbar extends React.Component {
     menAppear(){
         this.setState(prevState => {
             return { homme: !prevState.homme };
+        })    
+    }
+    acceAppear(){
+        this.setState(prevState => {
+            return { accessoire: !prevState.accessoire };
         })    
     }
     render(){
@@ -65,9 +71,24 @@ class Navbar extends React.Component {
                         </div>
                     </Fade>
                 )}
-                <p>
+                <p onClick={this.acceAppear}>
                     Accéssoires
                 </p>
+                {this.state.accessoire && (
+                    <Fade top>
+                        <div className='acceCategory'>
+                            <p>
+                                Sac
+                            </p>
+                            <p>
+                                Sur blouse
+                            </p>
+                            <p>
+                                Masque
+                            </p>
+                        </div>
+                    </Fade>
+                )}
                 <p>
                     Sur Mesure
                 </p>
